@@ -11,7 +11,7 @@ def test_app_import_flask_module1():
     assert flask_exists, "Have you imported the `Flask` class from `flask`?"
 
     flask_is_class = inspect.isclass(app.Flask)
-    assert flask_is_class, "`Flask` is not a class."
+    assert flask_is_class, "`Flask` is not a class!"
 
     render_template_exists = "render_template" in dir(app)
     assert render_template_exists, "`render_template` has not been imported."
